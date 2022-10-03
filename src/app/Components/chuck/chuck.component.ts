@@ -6,7 +6,7 @@ import { Phrase } from "./shared/phrase";
 @Component({
   selector: "app-chuck",
   templateUrl: "./chuck.component.html",
-  styleUrls: ["./chuck.component.css"]
+  styleUrls: ["./chuck.component.scss"]
 })
 
 export class ChuckComponent implements OnInit, OnDestroy {
