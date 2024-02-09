@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { Subscription } from "rxjs";
-import { ChuckService } from "./shared/chuck.service";
-import { Phrase } from "./shared/phrase";
+import { ChuckService } from "./shared/services/chuck.service";
+import { Phrase } from "./shared/interfaces/phrase";
 
 @Component({
   selector: "app-chuck",
