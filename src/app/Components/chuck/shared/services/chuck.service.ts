@@ -1,14 +1,13 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
-import { Phrase } from "./phrase";
+import { Phrase } from "../interfaces/phrase";
 
 @Injectable({
   providedIn: "root"
 })
 export class ChuckService {
-  private phrase: Phrase = { value: "", icon_url: "", id: "", url: "" };
-  private ChuckUrl = "https://api.chucknorris.io/jokes/random"; // URL to web api
+  private ChuckUrl = "https://api.chucknorris.io/jokes/random";
 
   constructor(private http: HttpClient) {}
 
