@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "chuckAJoke:build:production"
+              "buildTarget": "chuckAJoke:build:production"
             },
             "development": {
-              "browserTarget": "chuckAJoke:build:development"
+              "buildTarget": "chuckAJoke:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "chuckAJoke:build"
+            "buildTarget": "chuckAJoke:build"
           }
         },
         "lint": {
