@@ -21,6 +21,7 @@ export class ChuckComponent implements OnInit, OnDestroy {
   getPhrase(): void {
     this.subscriptions.add(
       this.chuckService.getPhrase().subscribe((data: Phrase) => {
+        console.log(data.value)
         this.phraseValue = data.value;
       }))
   }

@@ -8,7 +8,7 @@ import { ChuckModule } from './Components/chuck/chuck.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ChuckModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, ChuckModule],
   providers: [],
   bootstrap: [AppComponent],
 })
