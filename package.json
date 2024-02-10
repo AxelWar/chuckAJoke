@@ -9,7 +9,8 @@
     "test": "jest --verbose",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "prod": "ng build --configuration production --base-href=\"./\""
   },
   "private": true,
   "dependencies": {
