@@ -1,11 +1,11 @@
-import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { ChuckComponent } from "./chuck.component";
+import { ChuckService } from "./shared/services/chuck.service";
 
 @NgModule({
   declarations: [ChuckComponent],
-  imports: [BrowserModule],
-  providers: [],
+  imports: [],
+  providers: [ChuckService],
   exports: [ChuckComponent]
 })
 export class ChuckModule {}
