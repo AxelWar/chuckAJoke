@@ -10,6 +10,7 @@ import { Phrase } from './shared/interfaces/phrase';
 })
 export class ChuckComponent implements OnInit, OnDestroy {
     phraseValue!: string;
+    loading = true;
     subscriptions = new Subscription();
     constructor(private chuckService: ChuckService) {}
 
@@ -21,6 +22,7 @@ export class ChuckComponent implements OnInit, OnDestroy {
         this.subscriptions.add(
             this.chuckService.getPhrase().subscribe((data: Phrase) => {
                 this.phraseValue = data.value;
+                this.loading = false;
             })
         );
     }

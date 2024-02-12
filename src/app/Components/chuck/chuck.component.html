@@ -1,7 +1,18 @@
 <div class="chuck-container">
-    <div class="chuck-frase">
-        {{ phraseValue }}
-    </div>
+    @if (loading) {
+        <mat-spinner></mat-spinner>
+    } @else {
+        <div class="chuck-frase">
+            {{ phraseValue }}
+        </div>
 
-    <button class="chuck-button" (click)="getPhrase()">Bring a New One</button>
+        <button
+            mat-raised-button
+            class="chuck-button"
+            aria-label="Click to get a new Chuck Norris Joke"
+            (click)="getPhrase()"
+        >
+            Bring a New One
+        </button>
+    }
 </div>
